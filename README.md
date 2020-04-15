@@ -1,4 +1,4 @@
-# employee_retention_classifier
+# Employee Retention Classifier
 Goal: Classify which employees are most likely to leave a company by using data from Human Resources
 
 
@@ -44,3 +44,5 @@ In addition, according to the data, the most important variables that determine 
 * the number of projects the employee has been a part of
 
 Note: plotly animations will not load on github. However, running the Jupyter Notebook locally will render the plots correctly. 
+
+*Resources: This project was part of Rajeev D. Ratan's course, Data Science & Deep Learning for Business™ 20 Case Studies as presented in udemy.com*
