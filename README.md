@@ -1,13 +1,12 @@
 # Employee Retention Classifier
 Goal: Classify which employees are most likely to leave a company by using data from Human Resources
 
-
-Data: WA_Fn-UseC_-Telco-Customer-Churn.csv
-  * Source: https://www.kaggle.com/blastchar/telco-customer-churn
-  * contains 21 variable and 7k observations
+Data:
+  * hr_data - contains 9 variables and 14k observations.
+  * employee_satisfaction_evaluation.xlsx - contains 3 variable and 14k observations
 
 Files:
-  * customer_churn_classification.ipynb - performs data cleaning, data preparation, data analysis, and also model specifications
+  * Human_Resources_Retention.ipynb - performs data cleaning, data preparation, data analysis, and also model specifications
   
 Models:
   * Logistic Regression
@@ -22,25 +21,27 @@ Performance Metrics:
   
 Results:
 
-The three models performed very similarily:
-
- * Logistic Regression model (79% Accuracy, 0.57 F1-Score)
- * Neural Network model (79% Accuracy, 0.59 F1-Score).
- * Random Forest classifier (78% Accuracy, 0.52 F1-Score)
+The best performing model was the Random Forest Classifier with a classification accuracy of 99% and an F1-Score of 0.98.
+The Neural Network registered an accuracy of 95% and an F1-Score of 0.91. Finally, the Logistic Regression performed the worst
+with an accuracy of 79% and an F1-Score of 0.45.
 
 Conclusions:
 
-Because the performance of the models was similar, it would be wise to employ a logistic regression model since it is a mathematically less complex model and the results are more easily interpretable. Typically, the choice between models comes down to how much more precision we gain from the added complexity of the model. Despite being more complex, the specified Neural Network model and Random Forest Classifier do not perform significantly better than the the logistic regression model. It maybe because of the nature of the data; Neural Networks tend to perform better with large amounts
-of data (greater than 1 million observations) and when nonlinear relationships are more prevalent. For future steps, it maybe necessary to acquire more data to give the models more material to train on.
+Overall, we reached a very good level of classification accuracy with the Random Forest Classifier, that was significantly better
+than the Logistic Regression model. Typically, the choice between models comes down to how much more precision we gain from
+the added complexity of the model. Despite being more complex, the specified Neural Network model does not perform better
+than the random forest model. It maybe because of the nature of the data; Neural Networks tend to perform better with large amounts
+of data (greater than 1 million observations) and when nonlinear relationships are more prevalent. Ultimately, the decision to not
+continue searching for a deeper Neural Network that would give a better degree of accuracy than the Random Forest was made because 
+of the very high (99%) accuracy of the random forest model. The added complexity would not be justified given how small the room
+for improvement is. Thus, the Random Forest is the best model for this data and task.
 
-In addition, according to the data, the most important variables that determine customer churn are the following:
+In addition, according to the data, the most important variables that determine the retention of an employee are
 
- * Type of Contract (Monthly or Yearly)
- * Type of Internet Service
- * Whether the customer has online security or not
- 
-This telecommunications company may want to perform more analysis on how these characteristics of a customer affect churn. Historically, internet and service providers have moved away from contracts in favor of month-to-month billing where customers are free to cancel at a time. There should be more studies performed to see if this affects churn in this particular company.
+* the level of satisfaction of the employee (measured through surveys), 
+* the amount of time the employee has been working for the company, and 
+* the number of projects the employee has been a part of
 
-For more details on the analysis of this project, please read and follow the analysis in the jupyter notebook filecustomer_churn_classification.ipynb 
+Note: plotly animations will not load on github. However, running the Jupyter Notebook locally will render the plots correctly. 
 
 *Resources: This project was part of Rajeev D. Ratan's course, Data Science & Deep Learning for Business™ 20 Case Studies as presented in udemy.com*
