@@ -41,4 +41,6 @@ In addition, according to the data, the most important variables that determine 
  
 This telecommunications company may want to perform more analysis on how these characteristics of a customer affect churn. Historically, internet and service providers have moved away from contracts in favor of month-to-month billing where customers are free to cancel at a time. There should be more studies performed to see if this affects churn in this particular company.
 
+For more details on the analysis of this project, please read and follow the analysis in the jupyter notebook filecustomer_churn_classification.ipynb 
+
 *Resources: This project was part of Rajeev D. Ratan's course, Data Science & Deep Learning for Business™ 20 Case Studies as presented in udemy.com*
